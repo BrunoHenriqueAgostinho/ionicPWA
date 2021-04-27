@@ -10,6 +10,18 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'para-instituicoes',
+    loadChildren: () => import('./pages/para-instituicoes/para-instituicoes.module').then( m => m.ParaInstituicoesPageModule)
+  },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./pages/cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   }
 ];
 

@@ -6,13 +6,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Início', url: '/folder/Inbox', icon: 'home' },
+    { title: 'Para Instituições', url: 'para-instituicoes', icon: 'clipboard' },
+    { title: 'Para Estudantes', url: 'perfil', icon: 'school' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public labels = ['Sobre', 'Central de Ajuda'];
+  public nome: string = 'Bruno Silva';
+  public email: string = 'bruno.silva1847@etec.sp.gov.br';
   constructor() {}
 }
