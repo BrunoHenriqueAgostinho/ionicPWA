@@ -1,7 +1,7 @@
-ion-toolbar {
+/*ion-toolbar {
   max-width: 900px;
   margin: auto;
-}
+}*/
 
 ion-menu-button {
   color: var(--ion-color-success);
@@ -21,9 +21,33 @@ ion-content {
 }
 
 #cabecalho {
-  background-image: url("/assets/padrao.png");
+  background-image: url("/assets/padra4.png");
   background-repeat: repeat;
   background-size: 20px 20px;
+}
+
+.conteudoTrabalhos {
+  padding: 2% 1%;
+  width: 100%;
+}
+
+.trabalho {
+  width: 31.33%;
+  margin: 1%;
+  padding: 1%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+  border-radius: 1.6em;
+  float: left;
+}
+
+.trabalho h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.trabalho p {
+  text-align: justify;
+  font-size: 1.6em;
 }
 
 .txtDestaque {
