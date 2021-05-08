@@ -1,24 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons defaultHref="folder" text="" color="success">
-      <ion-back-button></ion-back-button>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="" color="success"></ion-back-button>
     </ion-buttons>
     <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <div class="divSessao">
-    <ion-avatar id="avatar">
-      <img src="assets/London.jpg" />
-    </ion-avatar>
-    <div>
-      <ion-text class="nome"color="success">
-        <h1>Nome do Usuário</h1>
-      </ion-text>
-      <ion-text class="descricao">
-        <p>Descrição do usuário. Descrição do usuário. Descrição do usuário. Descrição do usuário. Descrição do usuário. Descrição do usuário.</p>
-      </ion-text>
-      <p>Estudante da ETEC Antonio Devisate, Marília.</p>
+  <div class="conteudo">
+    <div class="centro">
+      <div class="metade">
+        <img class="imagemPerfil" src="assets/London.jpg">
+      </div>
+      <div class="metade">
+        <ion-text color="success">
+          <h1 class="txtDestaque">SILVA, Bruno</h1>
+          <p class="txtPequeno">Olá! Eu sou Bruno Henrique Agostinho da Silva e estou cursando o terceiro ano do Ensino Técnico Integrado ao Médio de Desenvolvimento de Sistemas na ETEC Antonio Devisate.</p>
+          <p class="txtPequeno">Gosto da área de Desenvolvimento de Sistemas e Design Gráfico. Tenho como objetivo desenvolver projetos intuitivos que agreguem valor para os usuários.</p>
+        </ion-text>
+      </div>
     </div>
   </div>
 </ion-content>

@@ -22,7 +22,15 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'pesquisa',
+    loadChildren: () => import('./pages/pesquisa/pesquisa.module').then( m => m.PesquisaPageModule)
   }
+
 ];
 
 @NgModule({

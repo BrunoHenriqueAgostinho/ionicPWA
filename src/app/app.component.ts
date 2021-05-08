@@ -9,6 +9,7 @@ export class AppComponent {
     { title: 'Início', url: '/folder/Inbox', icon: 'home' },
     { title: 'Para Instituições', url: 'para-instituicoes', icon: 'clipboard' },
     { title: 'Para Estudantes', url: 'perfil', icon: 'school' },
+    { title: 'Pesquisa', url: 'pesquisa', icon: 'school' },
   ];
   public labels = ['Sobre', 'Central de Ajuda'];
   public nome: string = 'Bruno Silva';
