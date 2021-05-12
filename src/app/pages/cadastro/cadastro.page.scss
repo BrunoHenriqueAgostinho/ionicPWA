@@ -2,6 +2,13 @@ ion-content {
   font-size: 10px;
 }
 
+.verde {
+  color:  #00A88E;
+}
+.bgverde {
+  --background: #00A88E;
+}
+
 .conteudo {
   padding: 2% 1%;
   width: 100%;
@@ -11,31 +18,36 @@ ion-content {
   text-align: center;
 }
 
-.centro {
-  width: 900px;
+.caixa {
+  width: 1050px;
+  height: 500px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
-  border-radius: 15px;
+  font-size: 10px;
 }
 
 .metade {
   width: 50%;
+  font-size: 10px;
+  padding: 0;
 }
 
 #metadeInfo {
   padding: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagemCadastro {
   width: 100%;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .txtDestaque {
   font-size: 6.0em;
   font-weight: bolder;
+  color: #00A88E;
 }
 
 .txtPequeno {
@@ -43,10 +55,26 @@ ion-content {
   font-size: 1.6em;
 }
 .txtInfo {
-  --background: rgba(var(--ion-color-success-rgb), 0.14);
-  border-radius: 15px;
-  --placeholder-color: #757575;
+  border-radius: 5px;
+  --placeholder-color: #00A88E;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00a88f3b;
   font-size: 1.6em;
   text-align: left;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1050px){
+  .caixa {
+    height: auto;
+    flex-direction: column;
+  }
+  .metade {
+    width: 100%;
+  }
+  .imagemCadastro {
+    display: none;
+  }
 }

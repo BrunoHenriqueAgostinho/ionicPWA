@@ -1,29 +1,31 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/" text="" color="success"></ion-back-button>
+      <ion-back-button defaultHref="/" text="" class="verde"></ion-back-button>
     </ion-buttons>
     <ion-title>Cadastro</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <div class="conteudo">
-    <div class="centro">
-      <div class="metade" id="metadeInfo">
-        <ion-text color="success">
-          <h1 class="txtDestaque">Cadastro</h1>
-          <p class="txtPequeno">Insira suas informações para realizar o cadastro.</p>
-        </ion-text>
-        <ion-input class="txtInfo" id="inpNome" type="text" placeholder="Nome Completo"></ion-input>
-        <ion-input class="txtInfo" id="inpEmail" type="email" placeholder="E-mail"></ion-input>
-        <ion-input class="txtInfo" id="inpSenha" type="password" placeholder="Senha"></ion-input>
-        <ion-input class="txtInfo" id="inpConfSenha" type="password" placeholder="Corfirmar senha"></ion-input>
-        <ion-button expand="block" shape="round" color="success">Cadastrar</ion-button>
-        <p class="txtPequeno">Já possui cadastro? <a href="login">Entrar</a></p>
-      </div>
-      <div class="metade">
+    <ion-card class="caixa">
+      <ion-card-content class="metade" id="metadeInfo">
+        <div>
+          <ion-text color="success">
+            <h1 class="txtDestaque">Cadastro</h1>
+            <p class="txtPequeno">Insira suas informações para realizar o cadastro.</p>
+          </ion-text>
+          <ion-input class="txtInfo" id="inpNome" type="text" placeholder="Nome Completo"></ion-input>
+          <ion-input class="txtInfo" id="inpEmail" type="email" placeholder="E-mail"></ion-input>
+          <ion-input class="txtInfo" id="inpSenha" type="password" placeholder="Senha"></ion-input>
+          <ion-input class="txtInfo" id="inpConfSenha" type="password" placeholder="Corfirmar senha"></ion-input>
+          <ion-button expand="block" shape="round" class="bgverde">Cadastrar</ion-button>
+          <p class="txtPequeno"><a href="login">Já possui cadastro?</a></p>
+        </div>
+        </ion-card-content>
+      <ion-card-content class="metade">
         <img src="/assets/London.jpg" class="imagemCadastro">
-      </div>
-    </div>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>

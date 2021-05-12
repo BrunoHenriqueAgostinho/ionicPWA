@@ -7,10 +7,10 @@
     <ion-title>Início</ion-title>
     <ion-buttons slot="end">
       <ion-button routerLink="cadastro">
-          <ion-icon slot="end" color="success" size="large" [ios]="'key-outline'" [md]="'key-sharp'"></ion-icon>
+          <ion-icon slot="end" size="large" class="verde" [ios]="'key-outline'" [md]="'key-sharp'"></ion-icon>
       </ion-button>
       <ion-button routerLink="login">
-        <ion-icon slot="end" color="success" size="large" [ios]="'log-in-outline'" [md]="'log-in-sharp'"></ion-icon>
+        <ion-icon slot="end" class="verde" size="large" [ios]="'log-in-outline'" [md]="'log-in-sharp'"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -18,66 +18,56 @@
 
 <ion-content [fullscreen]="true">
   <div class="conteudo" id="cabecalho">
-    <ion-text color="success">
       <h1 class="txtDestaque">Seja bem-vindo ao Academic!</h1>
       <p class="txtPequeno">Aqui você pode postar seus trabalhos e acessar o trabalho de outras pessoas.</p>
-    <ion-searchbar id="txtPesquisa" placeholder="Pesquise por trabalhos aqui..."></ion-searchbar>
-    </ion-text>
+      <ion-searchbar id="txtPesquisa" placeholder="Pesquise por trabalhos aqui..."></ion-searchbar>
   </div>
-  <div class="conteudoTrabalhos">
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
-    <div class="trabalho">
-      <ion-text color="success">
-        <h1>Título</h1>
-      </ion-text>
-      <p>O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.</p>
-    </div>
+
+  <div class="conteudo">
+    <ion-card class="trabalho">
+      <ion-card-header>
+        <ion-card-title>Título</ion-card-title>
+        <ion-card-subtitle>Subtítulo</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="trabalho">
+      <ion-card-header>
+        <ion-card-title>Título</ion-card-title>
+        <ion-card-subtitle>Subtítulo</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="trabalho">
+      <ion-card-header>
+        <ion-card-title>Título</ion-card-title>
+        <ion-card-subtitle>Subtítulo</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+          O texto deve ser inserido aqui. O texto deve ser inserido aqui. O texto deve ser inserido aqui.O texto deve ser inserido aqui.
+        </p>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>

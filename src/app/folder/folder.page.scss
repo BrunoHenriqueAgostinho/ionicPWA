@@ -1,5 +1,9 @@
 ion-menu-button {
-  color: var(--ion-color-success);
+  color:  #00A88E;
+}
+
+.verde {
+  color:  #00A88E;
 }
 
 ion-content {
@@ -16,50 +20,60 @@ ion-content {
 }
 
 #cabecalho {
-  background-image: url("/assets/padra4.png");
+  background-color: #00A88E;
+  background-image: url("/assets/img/c10.png");
   background-repeat: repeat;
-  background-size: 20px 20px;
-}
-
-.conteudoTrabalhos {
-  padding: 2% 1%;
-  width: 100%;
+  background-size: 30px 30px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .trabalho {
-  width: 31.33%;
-  margin: 1%;
-  padding: 1%;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
-  border-radius: 1.6em;
-  float: left;
+  max-width: 70%;
 }
-
-.trabalho h1 {
-  text-align: center;
-  font-size: 2em;
-}
-
-.trabalho p {
+.trabalho ion-card-content {
   text-align: justify;
-  font-size: 1.6em;
 }
 
 .txtDestaque {
   font-size: 6.0em;
   font-weight: bolder;
+  color: white;
 }
 
 .txtPequeno {
-  color: black;
+  color: white;
   font-size: 1.6em;
 }
 
 #txtPesquisa {
-  --background: #e0ffe5;
-  --border-radius: 1.6em;
-  --placeholder-color: #757575;
-  --icon-color: var(--ion-color-success);
+  --background: white;
+  --border-radius: 5px;
+  --placeholder-color: #00A88E;
+  --cancel-button-color: #00A88E;
+  --clear-button-color: #00A88E;
+  --icon-color: #00A88E;
   font-size: 1.6em;
   text-align: left;
+  width: 70%;
+}
+
+@media screen and (max-width: 950px) {
+  .trabalho {
+    max-width: 90%;
+    margin: 1% 5%;
+  }
+  #txtPesquisa {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .txtDestaque {
+    font-size: 4.0em;
+  }
+  #cabecalho {
+    height: 350px;
+  }
 }

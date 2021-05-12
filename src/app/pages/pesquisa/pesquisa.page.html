@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/" text="" color="success"></ion-back-button>
+      <ion-back-button defaultHref="/" text="" class="verde"></ion-back-button>
     </ion-buttons>
     <ion-title>Pesquisa</ion-title>
   </ion-toolbar>
@@ -9,29 +9,16 @@
 
 <ion-content>
   <div class="conteudo">
-    <div class="centro">
-      <ion-text color="success">
-        <h1 class="txtDestaque">Título Trabalho</h1>
-        <p class="txtPequeno"><b>Resumo: </b>Nessa parte fica o resumo do trabalho ou uma descrição do que está sendo realizado. Inclua todas as informações que você achar pertinentes ao seu trabalho para que outros usuários tenham interesse de ler mais.</p>
-        <p class="txtPequeno"><b>Palavras-chaves: </b>Inclua; Palavras-chaves; do; seu; Trabalho; </p>
-        <p class="txtPequeno"><b>Autores: </b><a href="perfil">SILVA, Bruno</a></p>
-      </ion-text>
-    </div>
-    <div class="centro">
-      <ion-text color="success">
-        <h1 class="txtDestaque">Título Trabalho</h1>
-        <p class="txtPequeno"><b>Resumo: </b>Nessa parte fica o resumo do trabalho ou uma descrição do que está sendo realizado. Inclua todas as informações que você achar pertinentes ao seu trabalho para que outros usuários tenham interesse de ler mais.</p>
-        <p class="txtPequeno"><b>Palavras-chaves: </b>Inclua; Palavras-chaves; do; seu; Trabalho; </p>
-        <p class="txtPequeno"><b>Autores: </b><a href="perfil">SILVA, Bruno</a></p>
-      </ion-text>
-    </div>
-    <div class="centro">
-      <ion-text color="success">
-        <h1 class="txtDestaque">Título Trabalho</h1>
-        <p class="txtPequeno"><b>Resumo: </b>Nessa parte fica o resumo do trabalho ou uma descrição do que está sendo realizado. Inclua todas as informações que você achar pertinentes ao seu trabalho para que outros usuários tenham interesse de ler mais.</p>
-        <p class="txtPequeno"><b>Palavras-chaves: </b>Inclua; Palavras-chaves; do; seu; Trabalho; </p>
-        <p class="txtPequeno"><b>Autores: </b><a href="perfil">SILVA, Bruno</a></p>
-      </ion-text>
-    </div>
+    <ion-card class="caixa">
+      <ion-card-header>
+        <ion-card-title>Título</ion-card-title>
+        <ion-card-subtitle>Subtítulo</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Resumo: </strong>Nessa parte fica o resumo do trabalho ou uma descrição do que está sendo realizado. Inclua todas as informações que você achar pertinentes ao seu trabalho para que outros usuários tenham interesse de ler mais.</p>
+        <p><strong>Palavras-chaves: </strong>Inclua; Palavras-chaves; do; seu; Trabalho;</p>
+        <p><strong>Autores: </strong> <a href="perfil">SILVA, Bruno</a></p>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
