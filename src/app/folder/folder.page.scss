@@ -37,6 +37,13 @@ ion-content {
   text-align: justify;
 }
 
+.conteudoCabecalho{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .txtDestaque {
   font-size: 6.0em;
   font-weight: bolder;
